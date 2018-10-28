@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LilBit - URL Shortening Service</title>
+</head>
+<body>
+    <h1>Welcome to LilBit</h1>
+    <h3>URL shortening service created by <a href="http://www.michaelclaus.io" target="_blank">Michael Claus</a></h3>
+
+    <p>To use, simply send a <code>POST</code> request to: </p>
+    <code>
+            thisURL/api/<< URL you would like masked or shortened >>
+    </code>
+    <p>
+        Here are some examples:
+    </p>
+    <code>
+        thisUrl/api/www.yahoo.com<br>
+        thisUrl/api/www.google.com<br>
+        thisUrl/api/www.espn.com<br>
+    </code>
+    <p>
+        The URL you provide should be in a simple www.url.com(or .org or .net, whichever) format.<br>
+        Do not include http:// or https://.
+    </p>
+
+    <p>
+        You can you use the form below to send a <code>POST</code> request.
+    </p>
+
+    <form action="/form" method="POST">
+        <label>Url:</label>
+        <input id="userUrl" type="text" name="userUrl">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
